@@ -1,1 +1,1 @@
-# ProjectDataScience
+# Project for Applied Data Science
