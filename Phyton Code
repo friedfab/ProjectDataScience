@@ -1,0 +1,15 @@
+model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(128, activation='relu',kernel_initializer = tf.keras.initializers.he_normal),
+    tf.keras.layers.Dense(64, activation='relu',kernel_regularizer = tf.keras.regularizers.L2(0.01)),
+    tf.keras.layers.Dense(10, activation = 'softmax')
+])
+
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999),
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False),
+              metrics=['accuracy'])
+              
+              
+              tensorboard_cb = tf.keras.callbacks.TensorBoard(run_logdir)
+early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=10,restore_best_weights=True)
+model.fit(train_images, train_labels, epochs=10, validation_data=(valid_images, valid_labels),callbacks=[tensorboard_cb,early_stopping_cb])
