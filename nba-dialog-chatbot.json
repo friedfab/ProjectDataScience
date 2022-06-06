@@ -1,0 +1,1220 @@
+{
+  "intents": [
+    {
+      "intent": "hello",
+      "examples": [
+        {
+          "text": "Ciao"
+        },
+        {
+          "text": "Hallo"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "Howdy"
+        },
+        {
+          "text": "Salut"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "playoffs",
+      "examples": [
+        {
+          "text": "play off"
+        },
+        {
+          "text": "playoff"
+        },
+        {
+          "text": "play offs"
+        },
+        {
+          "text": "playoffs"
+        },
+        {
+          "text": "Which team did qualify for the playoffs?"
+        },
+        {
+          "text": "Which team went through to the playoffs?"
+        },
+        {
+          "text": "Who did qualify for the playoffs?"
+        },
+        {
+          "text": "Who qualified?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ranking",
+      "examples": [
+        {
+          "text": "I need to have a ranking"
+        },
+        {
+          "text": "I need to have the ranking for the team",
+          "mentions": [
+            {
+              "entity": "team",
+              "location": [
+                35,
+                39
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Ranking"
+        },
+        {
+          "text": "Ranking for the team",
+          "mentions": [
+            {
+              "entity": "team",
+              "location": [
+                16,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What was the ranking of the team?",
+          "mentions": [
+            {
+              "entity": "team",
+              "location": [
+                28,
+                32
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What was the team's position in the league table?",
+          "mentions": [
+            {
+              "entity": "team",
+              "location": [
+                13,
+                19
+              ]
+            }
+          ]
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "team",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Atlanta Hawks",
+          "synonyms": [
+            "Atlanta",
+            "Hawks"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Boston Celtics",
+          "synonyms": [
+            "Celtics"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brooklyn Nets",
+          "synonyms": [
+            "Nets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Charlotte Hornets",
+          "synonyms": [
+            "Bobcats",
+            "Charlotte",
+            "Charlotte Bobcats",
+            "Hornets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chicago Bulls",
+          "synonyms": [
+            "Bulls"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cleveland Cavaliers",
+          "synonyms": [
+            "Cavaliers",
+            "Cleveland"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dallas Mavericks",
+          "synonyms": [
+            "Dallas",
+            "Mavericks"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Denver Nuggets",
+          "synonyms": [
+            "Nuggets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Detroit Pistons",
+          "synonyms": [
+            "Detroit",
+            "Pistons"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Golden State Warriors",
+          "synonyms": [
+            "Golden State",
+            "Warriors"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Houston Rockets",
+          "synonyms": [
+            "Houston",
+            "Rockets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Indiana Pacers",
+          "synonyms": [
+            "Indiana",
+            "Pacers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "LA Clippers",
+          "synonyms": [
+            "Clippers",
+            "Los Angeles Clippers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Los Angeles Lakers",
+          "synonyms": [
+            "Lakers",
+            "LA Lakers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Memphis Grizzlies",
+          "synonyms": [
+            "Grizzlies",
+            "Memphis"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Miami Heat",
+          "synonyms": [
+            "Heat",
+            "Miami"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Milwaukee Bucks",
+          "synonyms": [
+            "Bucks",
+            "Milwaukee "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Minnesota Timberwolves",
+          "synonyms": [
+            "Timber",
+            "Timberwolves",
+            "Wolves"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New Orleans Pelicans",
+          "synonyms": [
+            "Hornets",
+            "New Orleans",
+            "New Orleans Hornets",
+            "Pelicans"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New York Knicks",
+          "synonyms": [
+            "Knicks"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Oklahoma City Thunder",
+          "synonyms": [
+            "Thunders"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Orlando Magic",
+          "synonyms": [
+            "Magic",
+            "Orlando"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Philadelphia 76ers",
+          "synonyms": [
+            "76ers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Phoenix Suns",
+          "synonyms": [
+            "Phoenix",
+            "Suns"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Portland Trail Blazers",
+          "synonyms": [
+            "Blazers",
+            "Trail Blazers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sacramento Kings",
+          "synonyms": [
+            "Kings",
+            "Sacramento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "San Antonio Spurs",
+          "synonyms": [
+            "San Antonio",
+            "Spurs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "team",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "team's",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Toronto Raptors",
+          "synonyms": [
+            "Raptors"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Utah Jazz",
+          "synonyms": [
+            "Jazz",
+            "Jazzs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Washington Wizards",
+          "synonyms": [
+            "Washington",
+            "Wizards"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "year",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "2011",
+          "synonyms": [
+            "11",
+            "11s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2012",
+          "synonyms": [
+            "12",
+            "12s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2013",
+          "synonyms": [
+            "13",
+            "13s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2014",
+          "synonyms": [
+            "14",
+            "14s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2015",
+          "synonyms": [
+            "15",
+            "15s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2016",
+          "synonyms": [
+            "16",
+            "16s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2017",
+          "synonyms": [
+            "17",
+            "17s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2018",
+          "synonyms": [
+            "18",
+            "18s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2019",
+          "synonyms": [
+            "19",
+            "19s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2020",
+          "synonyms": [
+            "20",
+            "20s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2021",
+          "synonyms": [
+            "21",
+            "21s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2022",
+          "synonyms": [
+            "22",
+            "22s"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/domenic.largiader%40ibm.com_dev/default/nba.json",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic ICA5OGIwMDEwNS0wN2E1LTQwNTMtYWE1Yi1hMTMwMzdkZjdjOWY6MTNhSlNkOVh5Z3h6U2s4ZW5nY1RBcjVubGF4RDdWTDNMMVI2UjlWTW1WR2lFR2h0dFlVSkQyZ0J6Y1ZVTWhjNiAgICAgICAgICAgICAgICAgICA="
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1651606267087",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In which year?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1651774923459",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1651774923460",
+      "previous_sibling": "handler_8_1651774923460"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1651835579543",
+      "context": {
+        "year": "@year"
+      },
+      "conditions": "@year",
+      "event_name": "input",
+      "dialog_node": "handler_10_1651835579544"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1651835579543",
+      "conditions": "@year",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1651836935789",
+      "previous_sibling": "handler_9_1651835579544"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I need some further inputs. In order to give you the information about the playoff, I need the team name and the particular year."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1651606318592",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1651606475716",
+      "previous_sibling": "response_9_1651856282599"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I need some more information to search the ranking for you. I will need the team and the year to find the specific ranking."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1651583937439",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1651775629829"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_4_1651815637085",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1651815662563"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I need some more input to search the ranking for you. I will need the team and the year to find the specific information about a potential playoff qualification."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1651606267087",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1651835536597"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not such team exists. Please enter a valid NBA team."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1651774864071",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1651839860449",
+      "previous_sibling": "handler_2_1651839844575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1651774923459",
+      "conditions": "@year",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1651839907181",
+      "previous_sibling": "handler_10_1651774923460"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Great."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1651774864071",
+      "conditions": "@team",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1651839844575",
+      "previous_sibling": "handler_7_1651774864113"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1651774864071",
+      "context": {
+        "team": "@team"
+      },
+      "conditions": "@team",
+      "event_name": "input",
+      "dialog_node": "handler_4_1651774864113"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1651815662954",
+      "event_name": "input",
+      "dialog_node": "handler_4_1651815662973"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1651835536805",
+      "conditions": "@team",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1651836898466",
+      "previous_sibling": "handler_9_1651836864590"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I can only access data between 2011 and 2022. Please enter a valid year."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1651774923459",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1651839935539",
+      "previous_sibling": "handler_1_1651839907181"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "For which team?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1651774864071",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1651774864113",
+      "previous_sibling": "handler_4_1651774864113"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1651815662954",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1651815662973",
+      "previous_sibling": "handler_4_1651815662973"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1651835536805",
+      "context": {
+        "team": "@team"
+      },
+      "conditions": "@team",
+      "event_name": "input",
+      "dialog_node": "handler_7_1651835536814"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1651774923459",
+      "context": {
+        "year": "@year"
+      },
+      "conditions": "@year",
+      "event_name": "input",
+      "dialog_node": "handler_8_1651774923460"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I can only access this information between 2011 and 2022. Please enter a valid year."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1651835579543",
+      "conditions": "",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1651836948863",
+      "previous_sibling": "handler_10_1651836935789"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "For which team do you want to know this information?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1651835536805",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1651835536815",
+      "previous_sibling": "handler_7_1651835536814"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "For which year?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1651835579543",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1651835579544",
+      "previous_sibling": "handler_10_1651835579544"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry, not such team exists. Please enter a valid team name."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1651835536805",
+      "conditions": "",
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1651836864590",
+      "previous_sibling": "handler_9_1651835536815"
+    },
+    {
+      "type": "standard",
+      "title": "Respond from Cloudant (ranking)",
+      "parent": "node_9_1651583937439",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "team": "$team",
+            "year": "$year",
+            "operations": "$operations"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1651815637085"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1651775155640",
+      "previous_sibling": "handler_1_1651775629829"
+    },
+    {
+      "type": "standard",
+      "title": "Respond from Cloudant (playoffs)",
+      "parent": "node_5_1651606267087",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "team": "$team",
+            "year": "$year",
+            "operations": "$operations"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1651815637085"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1651606318592",
+      "previous_sibling": "slot_10_1651835579543"
+    },
+    {
+      "type": "standard",
+      "title": "Return",
+      "context": {
+        "team": null,
+        "year": null
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1651815637085",
+      "previous_sibling": "Anything else"
+    },
+    {
+      "type": "frame",
+      "title": "Playoffs",
+      "context": {
+        "operations": "playoffs"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1651606318592"
+      },
+      "conditions": "#playoffs",
+      "dialog_node": "node_5_1651606267087",
+      "previous_sibling": "node_9_1651583937439"
+    },
+    {
+      "type": "standard",
+      "title": "Hello",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there basketball fan! How can I be of your assistance?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#hello",
+      "dialog_node": "node_6_1651776858359",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Ranking",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "operations": "ranking"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1651775155640"
+      },
+      "conditions": "#ranking",
+      "dialog_node": "node_9_1651583937439",
+      "previous_sibling": "node_6_1651776858359"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1651583937439",
+      "disabled": true,
+      "dialog_node": "response_10_1651584088936",
+      "previous_sibling": "slot_5_1651774923459"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_2.message"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1651775155640",
+      "context": {},
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_10_1652736464817"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1651776858359",
+      "disabled": true,
+      "dialog_node": "response_2_1651777266856"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_1.message"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1651606318592",
+      "context": {},
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_6_1651856281490"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "That did not work."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1651775155640",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1652736466567",
+      "previous_sibling": "response_10_1652736464817"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "That did not work. "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1651606318592",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1651856282599",
+      "previous_sibling": "response_6_1651856281490"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1651606267087",
+      "variable": "$year",
+      "dialog_node": "slot_10_1651835579543",
+      "previous_sibling": "slot_5_1651835536805"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1651583937439",
+      "variable": "$team",
+      "dialog_node": "slot_2_1651774864071",
+      "previous_sibling": "node_3_1651775155640"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1651583937439",
+      "variable": "$year",
+      "dialog_node": "slot_5_1651774923459",
+      "previous_sibling": "slot_2_1651774864071"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1651606267087",
+      "variable": "$team",
+      "dialog_node": "slot_5_1651835536805",
+      "previous_sibling": "handler_1_1651835536597"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1651815637085",
+      "dialog_node": "slot_8_1651815662954",
+      "previous_sibling": "handler_1_1651815662563"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am your NBA Bot. I provide information about the a teams historic qualifications for the playoffs as well as the specific ranking between 2011 and 2022"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "team": null,
+        "year": null,
+        "operations": null
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "nba",
+  "language": "en",
+  "description": ""
+}
