@@ -1,0 +1,88 @@
+// Script for the Cloud Action function to initiate read requests from Watson Assistant
+// and return the specific content from the CloudantDB (nbabasket)
+
+// Load async
+    const async = require('async');
+  
+    // Load the client library by adding the following require definition:
+    const Cloudant = require('@cloudant/cloudant');
+    
+    /*===================================
+    CREDENTIALS for Cloudant DB (nbabasket):
+    ===================================*/
+    
+    // Initialize the client library by supplying your credentials:
+    const cloudant = new Cloudant({ url: 'https://apikey-v2-getphic9juua2rt8xj8jwr6m4nd61hi3hz1bj38qxjb:14200e906ab5b89195ad3886691136d3@cf339528-794c-4422-8233-9071f63b424a-bluemix.cloudantnosqldb.appdomain.cloud', plugins: { iamauth: { iamApiKey: '_jeidyzmpU5mmb5H_V0QoiJsdrEdYYLjYWXTOlxM4HHy' } } });
+
+    // db to be used
+    const db = cloudant.db.use('nbabasket');
+                
+    /*=================================*/
+
+    const main = async (params) => {
+        
+        // define a returnString
+        let returnString = '';
+        
+        // define the params
+        nbateam = params.team;
+        nbayear = params.year;
+        nbaoperations = params.operations;
+        
+
+        // switch statement to define rules 
+        switch(nbaoperations){
+            case 'playoffs':
+                
+                // ticketNumber is only required to verify team
+                let verifyTeam = nbateam; 
+                console.log('Verifying ' + nbateam);
+                
+                // combine the parameters into a variable to be searched as ID within the Cloudant DB
+                var id = nbateam + nbayear;
+                
+                // fetch a document by its team
+                let teamVerification = await db.get(id);
+                
+                // transform the objects returned from Cloudant in a string to be showcased
+                let teamVerificationJSONstringify = JSON.stringify(teamVerification, null, 2);
+                console.log('The following information about the team is available: ' + teamVerificationJSONstringify);
+                
+                // return message with returnString
+                returnString = 'The following information about the team is available: ' + teamVerificationJSONstringify;
+                return { message: returnString };
+                
+                break;
+            
+            case 'ranking':
+                
+                // ticketNumber is only required to verify team
+                let verifyTeams = nbateam; 
+                console.log('Verifying ' + nbateam);
+                
+                // combine the parameters into a variable to be searched as ID within the Cloudant DB
+                var ids = nbateam + nbayear;
+                
+                // fetch a document by its team
+                let teamVerifications = await db.get(ids);
+                
+                // transform the objects returned from Cloudant in a string to be showcased
+                let teamVerificationJSONstringifys = JSON.stringify(teamVerifications, null, 2);
+                console.log('The following information about the team is available: ' + teamVerificationJSONstringifys);
+                
+                // return message with returnString
+                returnStrings = 'The following information about the team is available: ' + teamVerificationJSONstringifys;
+                return { message: returnStrings };
+                
+                break;
+            
+            default:
+                console.log('An error has ocurred, please try again later ...');
+                
+                // return message with returnString
+                returnString = `Das hat leider nicht geklappt. Versuchen Sie es bitte nochmal.`;
+                return { message: returnString };
+        }
+        
+     }
+     
